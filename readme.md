@@ -1,4 +1,4 @@
-# DeepLocaAl_Assignment
+# DeepLogicaAl_Assignment
 
 ## Overview
 This project, named DeepLocaAl_Assignment, is designed to address the requirements outlined in the Assignment: PDF Data Extraction and Rapid Prototyping. The project contains a Django application called `prototype`, which facilitates both PDF data extraction and rapid prototyping functionalities.
