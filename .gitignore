@@ -1,0 +1,8 @@
+__pycache__
+prototype/uploads
+prototype/db.sqlite3
+prototype/response.csv
+prototype/response.txt
+prototype/app/migrations
+.env
+env

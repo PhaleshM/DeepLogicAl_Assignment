@@ -1,0 +1,32 @@
+{% extends "app/base.html" %}
+
+{% block style %}
+<style>
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+</style>
+{% endblock style %}
+
+
+{% block body %}
+<div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="text-center mb-4">Upload File</h1>
+                        <form method="post" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <input type="file" name="file"><br>
+                            <input id="toggle-checkbox" name="toggle" value="True" type="checkbox" checked data-toggle="toggle" data-on="Table" data-off="Text" data-onstyle="success" data-offstyle="primary"><br>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

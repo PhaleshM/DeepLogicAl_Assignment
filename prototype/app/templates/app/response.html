@@ -1,0 +1,13 @@
+{% extends "app/base.html" %}
+
+{% block body %}
+<div class="container mt-5">
+    <h2>Response</h2>
+    {% if toggle %}
+    <pre>{{ response }}</pre>
+    {% else %}
+    {{ response|safe }}
+    {% endif %}
+
+</div>
+{% endblock %}
